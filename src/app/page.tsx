@@ -226,6 +226,7 @@ export default function Home() {
             <div><dt>{MEDIA_STATS.outlets}</dt><dd>изданий</dd></div>
             <div><dt>{MEDIA_STATS.top}</dt><dd>в РБК, «Ведомостях», «Коммерсанте», РГ, Forbes, «Известиях»</dd></div>
           </dl>
+          <div className={s.outlets}>{OUTLET_LOGOS.map((l) => <LogoMark key={l.file} logo={l} h={30} />)}</div>
           <div className={s.mediaCols}>
             <ul className={s.clips}>
               {FEATURED.slice(0, 8).map((p) => (

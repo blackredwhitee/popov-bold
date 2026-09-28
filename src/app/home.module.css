@@ -144,6 +144,12 @@
 .mediaNums dt { font: 700 clamp(56px, 7vw, 120px)/.9 var(--sans); letter-spacing: -.06em; color: var(--hot); }
 .mediaNums dd { margin: 8px 0 0; font: 500 15px/1.4 var(--sans); color: var(--on-navy); max-width: 32ch; }
 @media (max-width: 800px) { .mediaNums { grid-template-columns: 1fr 1fr; } }
+.outlets { margin: 0 0 48px; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); align-items: center; justify-items: start; gap: 36px 32px; padding: 32px 0; border-top: 1.5px solid rgba(255,255,255,.12); border-bottom: 1.5px solid rgba(255,255,255,.12); color: #fff; }
+.outlets :global(.logo-link):hover { color: var(--hot); }
+.outlets :global(.logo-link), .outlets :global([role="img"]) { max-width: 100%; }
+.outlets :global([role="img"]) { background-position: left center; -webkit-mask-position: left center !important; mask-position: left center !important; }
+@media (max-width: 900px) { .outlets { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .outlets { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .mediaCols { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: 40px clamp(40px, 6vw, 96px); }
 .clips, .awards { margin: 0; padding: 0; list-style: none; border-top: 1.5px solid rgba(255,255,255,.3); }
 .clips li { border-bottom: 1.5px solid rgba(255,255,255,.12); }
