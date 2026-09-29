@@ -7,7 +7,7 @@ import Pic from "@/components/Pic";
 import { TgIcon } from "@/components/icons";
 import { CASES } from "@/data/cases";
 import {
-  ABOUT, AWARDS, CAREER_CASES, FAQ, FIT, NOT_FIT, PAINS, QUOTES, SERVICES, STEPS, TIMELINE,
+  ABOUT, AWARDS, BOOKS, CAREER_CASES, FAQ, FIT, HOBBIES, NOT_FIT, PAINS, QUOTES, SERVICES, STEPS, TIMELINE,
 } from "@/data/home";
 import { COMPANY_LOGOS, OUTLET_LOGOS } from "@/data/logos";
 import { FEATURED, fmtDate, MEDIA_STATS } from "@/data/media";
@@ -205,12 +205,29 @@ export default function Home() {
         <figcaption className="container">С командой Talkbank</figcaption>
       </figure>
 
+      {/* Вне работы */}
+      <section className={`container sec ${s.life}`} data-reveal>
+        <h2 className="h2">Вне работы</h2>
+        <div>
+          <h3>Увлечения</h3>
+          <ul className={s.hobbies}>{HOBBIES.map((h) => <li key={h}>{h}</li>)}</ul>
+        </div>
+        <div>
+          <h3>Советую прочитать</h3>
+          <ol className={s.books}>{BOOKS.map((b) => <li key={b.t}><b>{b.t}</b><span>{b.a}</span></li>)}</ol>
+        </div>
+      </section>
+
       {/* Акселератор */}
       <section className={`container sec ${s.accel}`} data-reveal>
         <h2 className="h2">Акселератор для собственников</h2>
         <div>
-          <p>Сообщество компаний, которые растут по методологии «7П+1» и работают на платформе операционного контроля с ИИ. <b>10+ компаний, 5+ млрд ₽ совокупной выручки.</b> Работает с декабря 2025 года.</p>
-          <a href="#form" className="btn btn-primary">Подать заявку <span aria-hidden="true">→</span></a>
+          <p>Помогаю собственникам вырасти до 1 млрд ₽ выручки: убрать системные барьеры, выстроить управленческую архитектуру, организовать финансирование, усилить команду и личную эффективность. По методологии «7П+1». <b>10+ компаний, 5+ млрд ₽ совокупной выручки.</b> Работает с декабря 2025 года.</p>
+          <p className={s.accelNote}>Отбор — через обязательное собеседование.</p>
+          <div className={s.heroBtns}>
+            <a href="#form" className="btn btn-primary">Подать заявку <span aria-hidden="true">→</span></a>
+            <a href="https://pnpconsulting.ru" className="btn btn-outline" target="_blank" rel="noopener">Сайт акселератора ↗</a>
+          </div>
         </div>
       </section>
 
