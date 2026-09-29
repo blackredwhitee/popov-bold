@@ -17,8 +17,8 @@ import { Faq, MethodScheme } from "./_home/Interactive";
 import s from "./home.module.css";
 
 export const metadata = meta({
-  title: "Михаил Попов — внешний директор по развитию",
-  description: "Нахожу, где бизнес теряет деньги, и остаюсь, пока это не станет прибылью. 25+ лет в управлении: «Магнит», ГК ПИК, BORK. Фикс + процент от результата.",
+  title: "Михаил Попов — предприниматель, основатель Talkbank и EasyFinance",
+  description: "Предприниматель в финтехе и инновациях: основатель Talkbank, EasyFinance и TG Market, топ-35 предпринимателей в сфере ИИ по версии RB.ru. Помогаю собственникам находить, где бизнес теряет деньги, и выводить его в прибыль.",
   path: "/",
 });
 
@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <main className={s.home}>
       <JsonLd data={{
-        "@context": "https://schema.org", "@type": "Person", name: "Михаил Попов", jobTitle: "Внешний директор по развитию",
+        "@context": "https://schema.org", "@type": "Person", name: "Михаил Попов", jobTitle: "Предприниматель, основатель и CEO Talkbank",
         url: SITE_URL, image: SITE_URL + "/img/portrait-840.jpg", sameAs: [TELEGRAM, FORBES],
       }} />
       <JsonLd data={{
@@ -41,14 +41,14 @@ export default function Home() {
 
       {/* Первый экран */}
       <section id="top" className={`container ${s.hero}`}>
-        <p className={s.kicker}><span>●</span> Внешний директор по развитию. 25 лет в управлении</p>
+        <p className={s.kicker}><span>●</span> Предприниматель в финтехе и инновациях. Основатель Talkbank и EasyFinance</p>
         <h1 className={s.h1}>Нахожу, где бизнес теряет деньги. <em>И остаюсь, пока это не&nbsp;станет прибылью.</em></h1>
         <div className={s.heroGrid}>
           <figure className={s.photo}>
             <Pic name="portrait" widths={[420, 840]} sizes="(max-width: 900px) 80vw, 380px" alt="Михаил Попов" priority />
           </figure>
           <div className={s.heroCopy}>
-            <p>Захожу в компанию с выручкой от 300 млн ₽, перестраиваю процессы вместе с командой и довожу изменения до отчётности. Фикс плюс процент от результата.</p>
+            <p>Прошёл путь от финансового аналитика до финансового директора и CEO собственных компаний. Сегодня помогаю собственникам с выручкой от 300 млн ₽ находить, где бизнес теряет деньги, и выводить его в прибыль.</p>
             <div className={s.heroBtns}>
               <a href="#form" className="btn btn-primary">Обсудить задачу <span aria-hidden="true">→</span></a>
               <a href="#cases" className="btn btn-outline">Кейсы</a>
@@ -57,6 +57,7 @@ export default function Home() {
           <dl className={s.nums}>
             <div><dt>25+</dt><dd>лет в управлении</dd></div>
             <div><dt>×60</dt><dd>рост оценки Talkbank</dd></div>
+            <div><dt>350&nbsp;000+</dt><dd>клиентов EasyFinance</dd></div>
             <div><dt>6</dt><dd>советов директоров</dd></div>
             <div><dt>{MEDIA_STATS.total}</dt><dd>публикаций в СМИ</dd></div>
           </dl>
@@ -111,7 +112,7 @@ export default function Home() {
             ))}
           </ol>
           <div className={s.pay}>
-            <p><b>Модель оплаты.</b> Фиксированная часть плюс процент от&nbsp;прироста выручки или прибыли. При долгосрочном партнёрстве — доля в&nbsp;бизнесе. Мне выгодно, чтобы вы заработали больше.</p>
+            <p><b>Партнёрство, а не подряд.</b> Фиксированная часть плюс процент от&nbsp;прироста выручки или прибыли. При долгосрочном партнёрстве — доля в&nbsp;бизнесе. Мне выгодно, чтобы вы заработали больше.</p>
             <a href="#form" className="btn btn-primary">Узнать условия <span aria-hidden="true">→</span></a>
           </div>
           <Note style={{ marginTop: 16 }}>Черновик: формулировку, размеры и условия утверждает Михаил.</Note>
