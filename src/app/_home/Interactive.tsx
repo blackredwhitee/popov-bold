@@ -64,8 +64,8 @@ export function MethodScheme({ note }: { note?: React.ReactNode }) {
           <button key={m.t} type="button" className={s.node} style={{ left: POS[i][0], top: POS[i][1], ["--i" as string]: i }}
             aria-pressed={node === i} onClick={() => pick(i)} onMouseEnter={hover(i)}>{m.t}</button>
         ))}
-        <button type="button" className={s.center} aria-pressed={node === 7} onClick={() => pick(7)} onMouseEnter={hover(7)} aria-label="+1 — личная эффективность собственника">
-          <b>+1</b><span>личная эффективность собственника</span>
+        <button type="button" className={s.center} aria-pressed={node === 7} onClick={() => pick(7)} onMouseEnter={hover(7)} aria-label="+1 — личная эффективность">
+          <b>+1</b><span>личная эффективность</span>
         </button>
       </div>
     </>

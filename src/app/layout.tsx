@@ -12,7 +12,7 @@ const inter = Inter_Tight({ subsets: ["cyrillic", "latin"], weight: ["400", "500
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL + "/"),
   title: { default: "Михаил Попов — предприниматель, основатель Talkbank и EasyFinance", template: `%s — ${SITE_NAME}` },
-  description: "Нахожу, где бизнес теряет деньги, и остаюсь, пока это не превратится в прибыль. 25+ лет в управлении: «Магнит», ГК ПИК, BORK. Для собственников с выручкой от 300 млн ₽.",
+  description: "Михаил Попов — предприниматель в финтехе и инновациях, основатель Talkbank и EasyFinance. Нахожу, где бизнес теряет деньги, и помогаю собственнику превратить потери в прибыль.",
 };
 
 export const viewport: Viewport = { themeColor: "#F2F1ED" };

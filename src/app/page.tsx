@@ -42,7 +42,7 @@ export default function Home() {
       {/* Первый экран */}
       <section id="top" className={`container ${s.hero}`}>
         <p className={s.kicker}><span>●</span> Предприниматель в финтехе и инновациях. Основатель Talkbank и EasyFinance</p>
-        <h1 className={s.h1}>Нахожу, где бизнес теряет деньги. <em>И остаюсь, пока это не&nbsp;станет прибылью.</em></h1>
+        <h1 className={s.h1}>Нахожу, где бизнес теряет деньги. <em>И&nbsp;помогаю собственнику превратить потери в&nbsp;прибыль.</em></h1>
         <div className={s.heroGrid}>
           <figure className={s.photo}>
             <Pic name="portrait" widths={[420, 840]} sizes="(max-width: 900px) 80vw, 380px" alt="Михаил Попов" priority />
@@ -55,8 +55,7 @@ export default function Home() {
             </div>
           </div>
           <dl className={s.nums}>
-            <div><dt>25+</dt><dd>лет в управлении</dd></div>
-            <div><dt>×60</dt><dd>рост оценки Talkbank</dd></div>
+            <div><dt>25+</dt><dd>лет в управлении — до генерального директора (оборот $500+ млн, 25&nbsp;000 человек)</dd></div>
             <div><dt>350&nbsp;000+</dt><dd>клиентов EasyFinance</dd></div>
             <div><dt>6</dt><dd>советов директоров</dd></div>
             <div><dt>{MEDIA_STATS.total}</dt><dd>публикаций в СМИ</dd></div>
@@ -91,11 +90,11 @@ export default function Home() {
       {/* Цитата */}
       <section className={`container ${s.quote}`} data-reveal>
         <figure className={s.quotePhoto}>
-          <Pic name="gallery-1" widths={[720, 1100]} sizes="(max-width: 900px) 90vw, 520px" alt="Михаил Попов в офисе Talkbank" />
+          <Pic name="about" widths={[520, 1040]} sizes="(max-width: 900px) 90vw, 520px" alt="Михаил Попов" />
         </figure>
         <blockquote>
           <p><span>«</span>{QUOTES.afterPains}<span>»</span></p>
-          <footer>Михаил Попов, из интервью 2020 года</footer>
+          <footer>Михаил Попов</footer>
         </blockquote>
       </section>
 
@@ -104,7 +103,7 @@ export default function Home() {
         <div className={`container sec ${s.how}`} data-reveal>
           <div className={s.head}>
             <h2 className="h2">Как я работаю</h2>
-            <p>Я не пишу отчёт и не ухожу. Работаю внутри компании вместе с&nbsp;вашей командой, пока изменения не появятся в&nbsp;отчётности.</p>
+            <p>Я работаю с собственником и его командой внутри компании по авторской методике «7П+1». Она позволяет получить устойчивый рост выручки и прибыли и вывести компанию на более высокий уровень развития.</p>
           </div>
           <ol className={s.steps}>
             {STEPS.map((x, i) => (
@@ -123,7 +122,7 @@ export default function Home() {
       <section id="services" className={`container sec ${s.services}`} data-reveal>
         <div className={s.head}>
           <h2 className="h2">Услуги</h2>
-          <p>Большинство клиентов начинают с диагностики — через 2–4 недели понятно, где деньги и сколько их.</p>
+          <p>Большинство клиентов начинают с диагностики — через 2–4 недели понятно, где компания теряет деньги и в каком приоритете строить работу по исправлению ситуации.</p>
         </div>
         <div className={s.svcList}>
           {SERVICES.map((v, i) => (
