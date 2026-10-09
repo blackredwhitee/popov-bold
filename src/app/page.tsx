@@ -191,12 +191,6 @@ export default function Home() {
           <figure className={s.aboutPhoto}>
             <Pic name="gallery-5" widths={[720, 1100]} sizes="(max-width: 900px) 90vw, 480px" alt="Михаил Попов" />
           </figure>
-          <div className={s.path}>
-            <h3>Путь</h3>
-            <ol>
-              {TIMELINE.filter((t) => shown(t.co + t.f)).map((t) => <li key={t.co + t.f}><b>{t.co}</b><span>{t.f}</span></li>)}
-            </ol>
-          </div>
         </div>
       </section>
 
